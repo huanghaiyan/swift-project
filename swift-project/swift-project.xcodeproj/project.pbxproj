@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,14 +13,16 @@
 		0110DA83237ABEBE0079DAA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0110DA81237ABEBE0079DAA6 /* Main.storyboard */; };
 		0110DA85237ABEBE0079DAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0110DA84237ABEBE0079DAA6 /* Assets.xcassets */; };
 		0110DA88237ABEBE0079DAA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0110DA86237ABEBE0079DAA6 /* LaunchScreen.storyboard */; };
-		01B00A4A2383E2AF0038D065 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A492383E2AF0038D065 /* BaseViewController.swift */; };
 		01B00A582383E3C70038D065 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A572383E3C70038D065 /* MineViewController.swift */; };
 		01B00A5A2383E3D90038D065 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A592383E3D90038D065 /* HomeViewController.swift */; };
 		01B00A5C2383E3E90038D065 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A5B2383E3E90038D065 /* ForumViewController.swift */; };
-		01B00A5E2383E4270038D065 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A5D2383E4270038D065 /* MainTabBarViewController.swift */; };
-		01B00A602383E4710038D065 /* MAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A5F2383E4710038D065 /* MAWebViewController.swift */; };
 		01B00A652384EC3C0038D065 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A642384EC3C0038D065 /* UIColor+Extension.swift */; };
 		01B00A672385141B0038D065 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A662385141B0038D065 /* UILabel+Extension.swift */; };
+		01B00A6D23854A680038D065 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A6923854A680038D065 /* BaseViewController.swift */; };
+		01B00A6E23854A680038D065 /* MAWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A6A23854A680038D065 /* MAWebViewController.swift */; };
+		01B00A6F23854A680038D065 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A6B23854A680038D065 /* MainTabBarViewController.swift */; };
+		01B00A7123854AF40038D065 /* HYBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A7023854AF40038D065 /* HYBaseButton.swift */; };
+		01B00A73238679C50038D065 /* js-origin.html in Resources */ = {isa = PBXBuildFile; fileRef = 01B00A72238679C50038D065 /* js-origin.html */; };
 		AAD01A89B9BDF122DB8F4390 /* Pods_swift_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,15 +35,17 @@
 		0110DA84237ABEBE0079DAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0110DA87237ABEBE0079DAA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0110DA89237ABEBE0079DAA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01B00A492383E2AF0038D065 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		01B00A572383E3C70038D065 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		01B00A592383E3D90038D065 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		01B00A5B2383E3E90038D065 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
-		01B00A5D2383E4270038D065 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		01B00A5F2383E4710038D065 /* MAWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAWebViewController.swift; sourceTree = "<group>"; };
 		01B00A612383FB580038D065 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
 		01B00A642384EC3C0038D065 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		01B00A662385141B0038D065 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		01B00A6923854A680038D065 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		01B00A6A23854A680038D065 /* MAWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAWebViewController.swift; sourceTree = "<group>"; };
+		01B00A6B23854A680038D065 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		01B00A7023854AF40038D065 /* HYBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBaseButton.swift; sourceTree = "<group>"; };
+		01B00A72238679C50038D065 /* js-origin.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js-origin.html"; sourceTree = "<group>"; };
 		3B073F2CBD1D6CB7B8B2D6DE /* Pods-swift-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.debug.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.debug.xcconfig"; sourceTree = "<group>"; };
 		952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26AA087A7DA9B91DD2FC384 /* Pods-swift-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.release.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		01B00A452383E2AF0038D065 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				01B00A72238679C50038D065 /* js-origin.html */,
 				01B00A612383FB580038D065 /* AppMacro.h */,
 			);
 			path = Utils;
@@ -124,9 +129,8 @@
 		01B00A482383E2AF0038D065 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				01B00A492383E2AF0038D065 /* BaseViewController.swift */,
-				01B00A5D2383E4270038D065 /* MainTabBarViewController.swift */,
-				01B00A5F2383E4710038D065 /* MAWebViewController.swift */,
+				01B00A6823854A680038D065 /* Controller */,
+				01B00A6C23854A680038D065 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -244,6 +248,24 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		01B00A6823854A680038D065 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01B00A6923854A680038D065 /* BaseViewController.swift */,
+				01B00A6A23854A680038D065 /* MAWebViewController.swift */,
+				01B00A6B23854A680038D065 /* MainTabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01B00A6C23854A680038D065 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01B00A7023854AF40038D065 /* HYBaseButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		696CE7AC6D3DD2B072503C58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,7 +280,6 @@
 				3B073F2CBD1D6CB7B8B2D6DE /* Pods-swift-project.debug.xcconfig */,
 				C26AA087A7DA9B91DD2FC384 /* Pods-swift-project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -325,6 +346,7 @@
 				0110DA88237ABEBE0079DAA6 /* LaunchScreen.storyboard in Resources */,
 				0110DA85237ABEBE0079DAA6 /* Assets.xcassets in Resources */,
 				0110DA83237ABEBE0079DAA6 /* Main.storyboard in Resources */,
+				01B00A73238679C50038D065 /* js-origin.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,13 +400,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B00A672385141B0038D065 /* UILabel+Extension.swift in Sources */,
+				01B00A7123854AF40038D065 /* HYBaseButton.swift in Sources */,
 				0110DA80237ABEBE0079DAA6 /* ViewController.swift in Sources */,
-				01B00A5E2383E4270038D065 /* MainTabBarViewController.swift in Sources */,
-				01B00A4A2383E2AF0038D065 /* BaseViewController.swift in Sources */,
 				0110DA7C237ABEBE0079DAA6 /* AppDelegate.swift in Sources */,
+				01B00A6F23854A680038D065 /* MainTabBarViewController.swift in Sources */,
+				01B00A6E23854A680038D065 /* MAWebViewController.swift in Sources */,
 				0110DA7E237ABEBE0079DAA6 /* SceneDelegate.swift in Sources */,
 				01B00A582383E3C70038D065 /* MineViewController.swift in Sources */,
-				01B00A602383E4710038D065 /* MAWebViewController.swift in Sources */,
+				01B00A6D23854A680038D065 /* BaseViewController.swift in Sources */,
 				01B00A5A2383E3D90038D065 /* HomeViewController.swift in Sources */,
 				01B00A5C2383E3E90038D065 /* ForumViewController.swift in Sources */,
 				01B00A652384EC3C0038D065 /* UIColor+Extension.swift in Sources */,
