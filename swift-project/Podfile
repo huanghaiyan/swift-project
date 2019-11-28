@@ -7,4 +7,9 @@ target 'swift-project' do
 
   # Pods for swift-project
   pod 'Alamofire'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'Toast-Swift'
+  pod 'SnapKit'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
 end

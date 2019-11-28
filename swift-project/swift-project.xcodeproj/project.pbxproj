@@ -23,6 +23,12 @@
 		01B00A6F23854A680038D065 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A6B23854A680038D065 /* MainTabBarViewController.swift */; };
 		01B00A7123854AF40038D065 /* HYBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B00A7023854AF40038D065 /* HYBaseButton.swift */; };
 		01B00A73238679C50038D065 /* js-origin.html in Resources */ = {isa = PBXBuildFile; fileRef = 01B00A72238679C50038D065 /* js-origin.html */; };
+		01E37691238BB523006CEA6B /* FocusListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E37690238BB523006CEA6B /* FocusListViewController.swift */; };
+		01E37693238BB579006CEA6B /* FocusListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E37692238BB579006CEA6B /* FocusListCell.swift */; };
+		01E37698238BE173006CEA6B /* PrefixHerder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E37697238BE173006CEA6B /* PrefixHerder.swift */; };
+		01E3769B238CFFB1006CEA6B /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */; };
+		01E3769F238D300C006CEA6B /* FocusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3769E238D300C006CEA6B /* FocusModel.swift */; };
+		01E376A5238E6108006CEA6B /* BreweryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E376A4238E6108006CEA6B /* BreweryModel.swift */; };
 		AAD01A89B9BDF122DB8F4390 /* Pods_swift_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,12 @@
 		01B00A6B23854A680038D065 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		01B00A7023854AF40038D065 /* HYBaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HYBaseButton.swift; sourceTree = "<group>"; };
 		01B00A72238679C50038D065 /* js-origin.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "js-origin.html"; sourceTree = "<group>"; };
+		01E37690238BB523006CEA6B /* FocusListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusListViewController.swift; sourceTree = "<group>"; };
+		01E37692238BB579006CEA6B /* FocusListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusListCell.swift; sourceTree = "<group>"; };
+		01E37697238BE173006CEA6B /* PrefixHerder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefixHerder.swift; sourceTree = "<group>"; };
+		01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		01E3769E238D300C006CEA6B /* FocusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModel.swift; sourceTree = "<group>"; };
+		01E376A4238E6108006CEA6B /* BreweryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryModel.swift; sourceTree = "<group>"; };
 		3B073F2CBD1D6CB7B8B2D6DE /* Pods-swift-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.debug.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.debug.xcconfig"; sourceTree = "<group>"; };
 		952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26AA087A7DA9B91DD2FC384 /* Pods-swift-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.release.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +96,7 @@
 		0110DA7A237ABEBE0079DAA6 /* swift-project */ = {
 			isa = PBXGroup;
 			children = (
+				01E37699238CFCD9006CEA6B /* NetWork */,
 				01B00A622384EBCB0038D065 /* Expand */,
 				01B00A472383E2AF0038D065 /* Class */,
 				01B00A452383E2AF0038D065 /* Utils */,
@@ -104,6 +117,7 @@
 			children = (
 				01B00A72238679C50038D065 /* js-origin.html */,
 				01B00A612383FB580038D065 /* AppMacro.h */,
+				01E37697238BE173006CEA6B /* PrefixHerder.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -212,6 +226,7 @@
 		01B00A542383E3900038D065 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01E37692238BB579006CEA6B /* FocusListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +234,8 @@
 		01B00A552383E3900038D065 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01E3769E238D300C006CEA6B /* FocusModel.swift */,
+				01E376A4238E6108006CEA6B /* BreweryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				01B00A572383E3C70038D065 /* MineViewController.swift */,
+				01E37690238BB523006CEA6B /* FocusListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +282,14 @@
 				01B00A7023854AF40038D065 /* HYBaseButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		01E37699238CFCD9006CEA6B /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 		696CE7AC6D3DD2B072503C58 /* Frameworks */ = {
@@ -400,10 +426,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B00A672385141B0038D065 /* UILabel+Extension.swift in Sources */,
+				01E3769F238D300C006CEA6B /* FocusModel.swift in Sources */,
 				01B00A7123854AF40038D065 /* HYBaseButton.swift in Sources */,
+				01E37693238BB579006CEA6B /* FocusListCell.swift in Sources */,
 				0110DA80237ABEBE0079DAA6 /* ViewController.swift in Sources */,
+				01E3769B238CFFB1006CEA6B /* NetWorkManager.swift in Sources */,
+				01E37691238BB523006CEA6B /* FocusListViewController.swift in Sources */,
+				01E37698238BE173006CEA6B /* PrefixHerder.swift in Sources */,
 				0110DA7C237ABEBE0079DAA6 /* AppDelegate.swift in Sources */,
 				01B00A6F23854A680038D065 /* MainTabBarViewController.swift in Sources */,
+				01E376A5238E6108006CEA6B /* BreweryModel.swift in Sources */,
 				01B00A6E23854A680038D065 /* MAWebViewController.swift in Sources */,
 				0110DA7E237ABEBE0079DAA6 /* SceneDelegate.swift in Sources */,
 				01B00A582383E3C70038D065 /* MineViewController.swift in Sources */,
@@ -557,6 +589,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK6YS5PY79;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "swift-project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,6 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK6YS5PY79;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "swift-project/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
