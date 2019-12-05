@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class LoginViewController: BaseViewController {
 
@@ -61,15 +62,31 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController:LoginViewDelegate{
     func requestVerifyCode() {
-        //https://api.xingke.cn/api/publicservice/sendSmsMsg
+        
+        if self.loginView.mobileTextField.text?.count == 0 {
+            self.view.makeToast("请输入您的手机号")
+            return
+        }
+        self.view.makeToastActivity(.center)
         NetWorkManager.requestData(URLString: "https://api.xingke.cn/api/publicservice/sendSmsMsg", requestType: .Post, parameters: ["phoneNum":self.loginView.mobileTextField.text as Any], successed: { (result) in
-            
+            self.view.hideToastActivity()
+            self.view.makeToast("验证码发送成功")
         }, failured: { (result) in
             
         })
     }
     
     func moblieLogin() {
+        if self.loginView.mobileTextField.text?.count == 0 {
+            self.view.makeToast("请输入您的手机号")
+            return
+        }
+        
+        if self.loginView.verifyCodeTextField.text?.count == 0 {
+            self.view.makeToast("请输入您的验证码")
+            return
+        }
+        
         NetWorkManager.requestData(URLString: "https://api.xingke.cn/api/mobileuser/fastLogin", requestType: .Post, parameters: ["phoneNum":self.loginView.mobileTextField.text as Any,"smsCode":self.loginView.verifyCodeTextField.text as Any], successed: { (result) in
             print(result)
             

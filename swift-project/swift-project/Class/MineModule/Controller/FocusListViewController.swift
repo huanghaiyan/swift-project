@@ -49,6 +49,7 @@ class FocusListViewController: BaseViewController {
     }
     
     func loadData(){
+        
         NetWorkManager.requestData(URLString: "https://api.xingke.cn/bbs/api/user/getUserAttentionListByUserId", requestType: .Post, parameters:["userId": "10000971","queryUserId":"10000971","pageNum":"1","pageSize":"10"], successed: { (result) in
             self.tableView.mj_header.endRefreshing()
             self.tableView.mj_footer.endRefreshing()

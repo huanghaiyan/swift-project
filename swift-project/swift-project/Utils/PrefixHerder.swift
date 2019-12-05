@@ -11,4 +11,4 @@ import SnapKit
 import Kingfisher
 import Alamofire
 import HandyJSON
-//import Toast_Swift
+import Toast_Swift
