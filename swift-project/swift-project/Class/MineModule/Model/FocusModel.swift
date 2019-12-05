@@ -9,21 +9,16 @@
 import Foundation
 
 struct FocusModel : Codable {
-    var code:Int64!
-    var data:FocusDataModel
-    struct FocusDataModel : Codable{
-        
-        struct FocusItemModel : Codable{
-            var id: Int64!
-            var userId: String!
-            var nickName: String!
-            var articleCount: Int64!
-            var fansCount: Int64!
-            var attentionCount: Int64!
-            var attentionFlag: Int64!
-            var userAvatar: String!
-        }
-        let list: [FocusItemModel]
-    }
+    var list: [FocusItemModel]
 }
 
+struct FocusItemModel : Codable{
+    var id: Int64!
+    var userId: String!
+    var nickName: String!
+    var articleCount: Int64!
+    var fansCount: Int64!
+    var attentionCount: Int64!
+    var attentionFlag: Int64!
+    var userAvatar: String!
+}

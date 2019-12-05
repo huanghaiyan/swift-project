@@ -8,12 +8,18 @@
 
 import UIKit
 import SwiftyJSON
-import HandyJSON
+import MJRefresh
 
 class FocusListViewController: BaseViewController {
     var focusModel:FocusModel!
-    var dataArray:[FocusModel.FocusDataModel.FocusItemModel] = []
+    var dataArray:[FocusItemModel] = []
     var cellId = "FocusListCell"
+    
+    //顶部刷新
+    let header = MJRefreshNormalHeader()
+    //底部刷新
+    let footer = MJRefreshAutoNormalFooter()
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView.delegate = self
@@ -35,21 +41,36 @@ class FocusListViewController: BaseViewController {
             make.right.left.equalTo(self.view);
             make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
         }
-        
+        header.setRefreshingTarget(self, refreshingAction: #selector(FocusListViewController.headerRefresh))
+        footer.setRefreshingTarget(self, refreshingAction: #selector(FocusListViewController.footerRefresh))
+        self.tableView.mj_header = header
+        self.tableView.mj_footer = footer
         self.loadData()
     }
     
     func loadData(){
         NetWorkManager.requestData(URLString: "https://api.xingke.cn/bbs/api/user/getUserAttentionListByUserId", requestType: .Post, parameters:["userId": "10000971","queryUserId":"10000971","pageNum":"1","pageSize":"10"], successed: { (result) in
-                let jsonData = try! JSONSerialization.data(withJSONObject: result, options: .prettyPrinted)
-                let decoder = JSONDecoder()
-            self.focusModel = try! decoder.decode(FocusModel.self, from: jsonData)
-            self.dataArray.append(contentsOf: self.focusModel.data.list)
+            self.tableView.mj_header.endRefreshing()
+            self.tableView.mj_footer.endRefreshing()
+            
+            let jsonData = try! JSONSerialization.data(withJSONObject: result, options: .prettyPrinted)
+            self.focusModel = try! JSONDecoder().decode(FocusModel.self, from: jsonData)
+            self.dataArray.append(contentsOf: self.focusModel.list)
             
             self.tableView.reloadData()
         }, failured: {(result) in
             
         })
+    }
+    
+    @objc func headerRefresh() {
+        print("下拉刷新")
+        self.loadData()
+    }
+    
+    @objc func footerRefresh() {
+        print("上拉加载更多")
+        self.loadData()
     }
 }
 
@@ -107,5 +128,4 @@ extension FocusListViewController:UITableViewDelegate,UITableViewDataSource,Focu
         cell.itemModel = self.dataArray[indexPath.section]
         return cell
     }
-    
 }

@@ -31,7 +31,9 @@ class MineViewController: BaseViewController {
     @objc func jsClick(){
 //        let webVC = MAWebViewController()
 //        self.navigationController?.pushViewController(webVC, animated: true)
-        let focusListVC = FocusListViewController()
-        self.navigationController?.pushViewController(focusListVC, animated: true)
+//        let focusListVC = FocusListViewController()
+//        self.navigationController?.pushViewController(focusListVC, animated: true)
+        let loginVC = LoginViewController()
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
 }

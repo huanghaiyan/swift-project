@@ -12,4 +12,5 @@ target 'swift-project' do
   pod 'SnapKit'
   pod 'SwiftyJSON'
   pod 'HandyJSON'
+  pod 'MJRefresh'
 end

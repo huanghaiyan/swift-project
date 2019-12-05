@@ -29,6 +29,10 @@
 		01E3769B238CFFB1006CEA6B /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */; };
 		01E3769F238D300C006CEA6B /* FocusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E3769E238D300C006CEA6B /* FocusModel.swift */; };
 		01E376A5238E6108006CEA6B /* BreweryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E376A4238E6108006CEA6B /* BreweryModel.swift */; };
+		01E376AB2390B9D4006CEA6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E376AA2390B9D4006CEA6B /* LoginViewController.swift */; };
+		01E376AD2390BAFF006CEA6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E376AC2390BAFF006CEA6B /* LoginView.swift */; };
+		01F3C6DB239790000014F1A4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C6DA239790000014F1A4 /* UIImage+Extension.swift */; };
+		01F3C6DD2397B37B0014F1A4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C6DC2397B37B0014F1A4 /* UserModel.swift */; };
 		AAD01A89B9BDF122DB8F4390 /* Pods_swift_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		01E3769E238D300C006CEA6B /* FocusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModel.swift; sourceTree = "<group>"; };
 		01E376A4238E6108006CEA6B /* BreweryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryModel.swift; sourceTree = "<group>"; };
+		01E376AA2390B9D4006CEA6B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01E376AC2390BAFF006CEA6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		01F3C6DA239790000014F1A4 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		01F3C6DC2397B37B0014F1A4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3B073F2CBD1D6CB7B8B2D6DE /* Pods-swift-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.debug.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.debug.xcconfig"; sourceTree = "<group>"; };
 		952346C2B6A7CDD177578D90 /* Pods_swift_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26AA087A7DA9B91DD2FC384 /* Pods-swift-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-project.release.xcconfig"; path = "Target Support Files/Pods-swift-project/Pods-swift-project.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 		01B00A472383E2AF0038D065 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				01E376A62390B982006CEA6B /* LoginModule */,
 				01B00A4B2383E32C0038D065 /* ForumModule */,
 				01B00A4D2383E32D0038D065 /* HomeModule */,
 				01B00A4C2383E32D0038D065 /* MineModule */,
@@ -262,6 +271,7 @@
 			children = (
 				01B00A642384EC3C0038D065 /* UIColor+Extension.swift */,
 				01B00A662385141B0038D065 /* UILabel+Extension.swift */,
+				01F3C6DA239790000014F1A4 /* UIImage+Extension.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -290,6 +300,40 @@
 				01E3769A238CFFB1006CEA6B /* NetWorkManager.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		01E376A62390B982006CEA6B /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				01E376A72390B9BA006CEA6B /* Controller */,
+				01E376A82390B9BA006CEA6B /* Model */,
+				01E376A92390B9BA006CEA6B /* View */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		01E376A72390B9BA006CEA6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01E376AA2390B9D4006CEA6B /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01E376A82390B9BA006CEA6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01F3C6DC2397B37B0014F1A4 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01E376A92390B9BA006CEA6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01E376AC2390BAFF006CEA6B /* LoginView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		696CE7AC6D3DD2B072503C58 /* Frameworks */ = {
@@ -429,19 +473,23 @@
 				01E3769F238D300C006CEA6B /* FocusModel.swift in Sources */,
 				01B00A7123854AF40038D065 /* HYBaseButton.swift in Sources */,
 				01E37693238BB579006CEA6B /* FocusListCell.swift in Sources */,
+				01E376AB2390B9D4006CEA6B /* LoginViewController.swift in Sources */,
 				0110DA80237ABEBE0079DAA6 /* ViewController.swift in Sources */,
 				01E3769B238CFFB1006CEA6B /* NetWorkManager.swift in Sources */,
 				01E37691238BB523006CEA6B /* FocusListViewController.swift in Sources */,
 				01E37698238BE173006CEA6B /* PrefixHerder.swift in Sources */,
 				0110DA7C237ABEBE0079DAA6 /* AppDelegate.swift in Sources */,
+				01F3C6DD2397B37B0014F1A4 /* UserModel.swift in Sources */,
 				01B00A6F23854A680038D065 /* MainTabBarViewController.swift in Sources */,
 				01E376A5238E6108006CEA6B /* BreweryModel.swift in Sources */,
 				01B00A6E23854A680038D065 /* MAWebViewController.swift in Sources */,
 				0110DA7E237ABEBE0079DAA6 /* SceneDelegate.swift in Sources */,
 				01B00A582383E3C70038D065 /* MineViewController.swift in Sources */,
+				01F3C6DB239790000014F1A4 /* UIImage+Extension.swift in Sources */,
 				01B00A6D23854A680038D065 /* BaseViewController.swift in Sources */,
 				01B00A5A2383E3D90038D065 /* HomeViewController.swift in Sources */,
 				01B00A5C2383E3E90038D065 /* ForumViewController.swift in Sources */,
+				01E376AD2390BAFF006CEA6B /* LoginView.swift in Sources */,
 				01B00A652384EC3C0038D065 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -47,7 +47,7 @@ class FocusListCell: UITableViewCell {
         return button
     }()
     
-    var itemModel: FocusModel.FocusDataModel.FocusItemModel?{
+    var itemModel: FocusItemModel?{
         didSet{
             guard let itemModel = itemModel else { return }
             self.iconImageView.kf.setImage(with: URL.init(string: itemModel.userAvatar))

@@ -53,7 +53,8 @@ class NetWorkManager: NSObject {
                case .success(let json):
                 let jsonDcit = JSON(json)
                 if jsonDcit["code"].intValue == 200{
-                    successed(json)
+                    let jsonDict = json as! Dictionary<String,Any>
+                    successed(jsonDict["data"] as Any)
                 }else{
                     print("连接失败")
                }
